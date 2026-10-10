@@ -1,0 +1,40 @@
+{
+  "name": "next-episode-miniapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NEXT EPISODE 下一集 — Fate Editorial 微信小程序 MVP",
+  "scripts": {
+    "dev:h5": "node scripts/taro-runner.cjs build --type h5 --watch",
+    "build:h5": "node scripts/taro-runner.cjs build --type h5",
+    "dev:weapp": "node scripts/taro-runner.cjs build --type weapp --watch",
+    "build:weapp": "node scripts/taro-runner.cjs build --type weapp",
+    "typecheck": "tsc --noEmit",
+    "check:content": "node --no-warnings --experimental-strip-types scripts/content-check.ts"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.26.0",
+    "@tarojs/components": "4.1.7",
+    "@tarojs/helper": "4.1.7",
+    "@tarojs/plugin-framework-react": "4.1.7",
+    "@tarojs/plugin-platform-h5": "4.1.7",
+    "@tarojs/plugin-platform-weapp": "4.1.7",
+    "@tarojs/react": "4.1.7",
+    "@tarojs/runtime": "4.1.7",
+    "@tarojs/shared": "4.1.7",
+    "@tarojs/taro": "4.1.7",
+    "@tarojs/taro-h5": "4.1.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-react": "^7.26.0",
+    "@tarojs/cli": "4.1.7",
+    "@tarojs/webpack5-runner": "4.1.7",
+    "@types/react": "^18.3.0",
+    "babel-preset-taro": "4.1.7",
+    "sass": "^1.83.0",
+    "typescript": "^5.7.0",
+    "webpack": "5.91.0"
+  }
+}
