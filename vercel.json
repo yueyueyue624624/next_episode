@@ -2,6 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "pnpm install --frozen-lockfile",
-  "buildCommand": "pnpm build:h5",
+  "buildCommand": "pnpm exec taro build --type h5",
   "outputDirectory": "preview-h5"
 }
