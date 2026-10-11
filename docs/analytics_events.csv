@@ -1,0 +1,30 @@
+﻿event,trigger,properties
+app_open,打开小程序,"source, session_id, is_new_user"
+onboarding_start,开始 Onboarding,entry_source
+onboarding_step_1_complete,完成关注领域,focus_areas
+onboarding_step_2_complete,完成当前状态,current_state
+onboarding_complete,完成 Onboarding,duration_ms
+today_view,查看 TODAY,"today_state, issue_id"
+draw_page_view,进入抽牌页,issue_exists
+card_selected,手动选牌,selected_slot
+auto_draw_clicked,点击替我抽,
+card_revealed,牌面揭示,"card_id, draw_method"
+tarot_result_view,查看今日牌结果,card_id
+story_opened,打开今日剧情,"issue_id, card_id"
+story_scroll_50,剧情阅读 50%,issue_id
+story_completed,完成剧情阅读,"issue_id, duration_ms"
+bonus_opened,打开本集彩蛋,"rarity, category"
+bonus_collected,收藏本集彩蛋,bonus_id
+share_card_entry,进入分享卡,source_section
+share_template_selected,选择模板,template_id
+share_card_generated,生成分享图,"template_id, nickname_visible"
+share_clicked,触发分享,"channel, template_id"
+evening_review_view,打开今晚回看,issue_id
+evening_feedback_submit,提交反馈,feedback_type
+tomorrow_teaser_view,查看明日关键词,keyword
+archive_opened,打开 ARCHIVE,issue_count
+archive_issue_opened,回看历史 Issue,"issue_id, days_ago"
+current_chapter_opened,查看当前章节,chapter_id
+collection_opened,查看收藏,count
+membership_page_view,查看 NEXT+,source
+membership_purchase,会员购买成功,"plan, amount"

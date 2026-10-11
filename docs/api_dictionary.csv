@@ -1,0 +1,15 @@
+﻿api,purpose,request,response,priority
+POST /api/v1/auth/wechat,微信登录,code,"token,user",P0
+GET /api/v1/profile,读取用户档案,-,profile,P0
+PUT /api/v1/profile,更新用户档案,"focus_areas,current_state,birthday",profile,P0
+GET /api/v1/today,读取今日完整状态,-,"todayState,issue,currentChapter",P0
+POST /api/v1/today/draw,抽取今日牌,"draw_method,selected_slot","issue_id,tarot_card,status",P0
+GET /api/v1/issues/:id,读取 Issue,issue_id,daily_issue,P0
+GET /api/v1/issues/:id/status,读取生成状态,issue_id,status,P0
+POST /api/v1/issues/:id/bonus/open,打开彩蛋,issue_id,bonus,P1
+POST /api/v1/issues/:id/feedback,晚间反馈,feedback_type,"ack,tomorrow_keyword",P1
+GET /api/v1/archive,历史 Issue,"cursor,page_size","items,next_cursor",P0
+GET /api/v1/chapter/current,当前章节,-,chapter,P1
+POST /api/v1/collection,收藏,"content_type,content_id",collection,P1
+DELETE /api/v1/collection/:id,取消收藏,collection_id,ack,P1
+GET /api/v1/config,远程配置,-,"feature_flags,evening_hour,experiments",P0

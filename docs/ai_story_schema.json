@@ -1,0 +1,90 @@
+{
+  "ai_input_example": {
+    "tarot_card": "THE_MOON",
+    "tarot_orientation": "upright",
+    "focus_areas": [
+      "career",
+      "future"
+    ],
+    "current_state": "want_change",
+    "recent_feedback": [
+      "partial",
+      "accurate",
+      "partial"
+    ],
+    "recent_story_tags": [
+      "uncertainty",
+      "career_change",
+      "self_doubt"
+    ],
+    "recent_cards": [
+      "THE_HERMIT",
+      "THE_FOOL"
+    ]
+  },
+  "ai_output_example": {
+    "story_title": "看不清的时候",
+    "hook": "现在最让你不舒服的，也许不是答案不好，而是暂时没有答案。",
+    "opening": "",
+    "turning_point": "",
+    "ending": "",
+    "editors_note": "",
+    "foreshadow": "",
+    "signals": {
+      "action": {
+        "score": 76,
+        "trend": "up",
+        "text": ""
+      },
+      "relation": {
+        "score": 58,
+        "trend": "flat",
+        "text": ""
+      },
+      "emotion": {
+        "score": 46,
+        "trend": "down",
+        "text": ""
+      }
+    },
+    "tomorrow_keyword": "重新出现",
+    "story_tags": [
+      "uncertainty",
+      "career_change"
+    ],
+    "story_lens": "message",
+    "safety_flags": []
+  },
+  "enums": {
+    "TodayState": [
+      "not_drawn",
+      "card_revealed",
+      "story_ready",
+      "active_day",
+      "evening_review_available",
+      "issue_closed"
+    ],
+    "IssueStatus": [
+      "generating",
+      "ready",
+      "fallback",
+      "failed"
+    ],
+    "FeedbackType": [
+      "accurate",
+      "partial",
+      "miss"
+    ],
+    "BonusRarity": [
+      "common",
+      "rare",
+      "special",
+      "hidden"
+    ],
+    "Trend": [
+      "up",
+      "flat",
+      "down"
+    ]
+  }
+}
