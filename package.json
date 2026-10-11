@@ -5,7 +5,7 @@
   "description": "NEXT EPISODE 下一集 — Fate Editorial 微信小程序 MVP",
   "scripts": {
     "dev:h5": "node scripts/taro-runner.cjs build --type h5 --watch",
-    "build:h5": "node scripts/taro-runner.cjs build --type h5",
+    "build:h5": "taro build --type h5",
     "dev:weapp": "node scripts/taro-runner.cjs build --type weapp --watch",
     "build:weapp": "node scripts/taro-runner.cjs build --type weapp",
     "typecheck": "tsc --noEmit",
